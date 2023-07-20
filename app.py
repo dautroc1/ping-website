@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # Endpoint that will trigger the website ping
-@app.route('/ping-website', methods=['POST'])
+@app.route('/ping-website', methods=['GET'])
 def ping_website():
     try:
         # Send a GET request to the website
