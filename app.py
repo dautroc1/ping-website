@@ -8,7 +8,7 @@ app = Flask(__name__)
 def ping_website():
     try:
         # Send a GET request to the website
-        response = requests.get('http://ncomic.io.vn/')
+        response = requests.get('https://ncomic.io.vn/')
         if response.status_code == 200:
             return "Website pinged successfully", 200
         else:
