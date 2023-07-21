@@ -15,6 +15,15 @@ def ping_website():
             return "Failed to ping website", 500
     except Exception as e:
         return f"Error: {str(e)}", 500
+@app.route('/ping-api', methods=['GET'])
+def ping_api():
+    try:
+        # Send a GET request to the website
+        response = requests.get('https://gpt-wxjs.onrender.com')
+        return "Website pinged successfully", 200
+        
+    except Exception as e:
+        return f"Error: {str(e)}", 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
