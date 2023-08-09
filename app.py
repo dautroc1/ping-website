@@ -24,6 +24,7 @@ def ping_api():
         response = requests.get('https://gpt2-brtm.onrender.com')
         response = requests.get('https://gpt3-8vfp.onrender.com')
         response = requests.get('https://gpt4-fxzq.onrender.com')
+        response = requests.get('https://gpt4-08a7.onrender.com')
         return "Website pinged successfully", 200
         
     except Exception as e:
