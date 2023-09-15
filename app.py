@@ -24,7 +24,7 @@ def ping_api():
         response = requests.get('https://gpt2-brtm.onrender.com')
         response = requests.get('https://gpt3-8vfp.onrender.com')
         response = requests.get('https://gpt4-fxzq.onrender.com')
-        response = requests.get('https://gpt4-08a7.onrender.com')
+        response = requests.get('https://test-gpt-y58q.onrender.com')
         response = requests.get('https://www.downloadvideos.click/')
         return "Website pinged successfully", 200
         
