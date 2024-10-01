@@ -23,7 +23,7 @@ def ping_api():
         return "Website pinged successfully", 200
         
     except Exception as e:
-        return f"Error: {str(e)}", 500
+        return f"Error: {str(e)}", 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
